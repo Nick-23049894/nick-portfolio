@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - Pokemon List App</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Pokemon List App</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/PokemonList/HomePage.jpg')">
+                    <img src="assets/images/PokemonList/HomePage.jpg" alt="LoginPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/PokemonList/Edit.jpg')">
+                    <img src="assets/images/PokemonList/Edit.jpg" alt="HomePage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/PokemonList/Add.jpg')">
+                    <img src="assets/images/PokemonList/Add.jpg" alt="Addpage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/PokemonList/Delete.jpg')">
+                    <img src="assets/images/PokemonList/Delete.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+
+                
+
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/PokemonList/HomePage.jpg" alt="Home Page" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/PokemonList/Edit.jpg" alt="Edit" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/PokemonList/Add.jpg" alt="Add" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/PokemonList/Delete.jpg" alt="Delete" class="preview-image" onclick="setCarousel(3)">
+            </div>
+            
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>About the Project</h2>
+                <div class="project-links">
+                    <a href="https://github.com/Nick-23049894/C346-MobileApp-miniproject" class="action-button github"
+                        target="_blank">GitHub</a>
+                    <a href="https://youtu.be/Lpg30W2ycco" target="_blank" class="action-button youtube">
+                        Video
+                    </a>
+                </div>
+            </div>
+            <p id="project-description">
+                The <strong>3D Prints App</strong> is an intuitive and dynamic mobile application built with <strong>React Native</strong>. 
+                It is designed to help users effortlessly manage their 3D model collections. With powerful features such as dynamic 
+                model management, robust image handling, and real-time updates, this app offers a seamless user experience for 3D printing enthusiasts.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Add Models:</strong> Easily add new models by entering a title, description, and image URLs. The app validates
+                    all image URLs, ensuring error-free submissions and allowing multiple images for a detailed representation.</li>
+                <li><strong>Dynamic Model Display:</strong> Models are displayed dynamically, reflecting real-time user input without any
+                    hardcoded data.</li>
+                <li><strong>Search Functionality:</strong> Quickly find models using the dynamic search bar, which filters results based on 
+                    your input. A handy counter displays the total number of visible models.</li>
+                <li><strong>Details Screen:</strong> View each model's details, including a full description and the ability to cycle through
+                    multiple images using a dedicated button for an immersive experience.</li>
+                <li><strong>Edit Models:</strong> Update existing models with ease. Modify titles, descriptions, and image collections dynamically,
+                    ensuring your collection stays up to date.</li>
+                <li><strong>Delete Models:</strong> Keep your collection clean and organized with the delete feature, allowing you to remove 
+                    models effortlessly.</li>
+            </ul>
+            <p>
+                The <strong>3D Prints App</strong> is a complete solution for managing your 3D model collection. With its dynamic capabilities
+                and user-friendly design, it empowers users to maintain a well-organized and visually appealing collection. Whether you're 
+                adding, editing, or searching for models, this app ensures an efficient and enjoyable experience.
+            </p>
+        </div>
+        
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

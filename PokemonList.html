@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - Pokemon List App</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Pokemon List App</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/PokemonList/HomePage.jpg')">
+                    <img src="assets/images/PokemonList/HomePage.jpg" alt="LoginPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/PokemonList/Edit.jpg')">
+                    <img src="assets/images/PokemonList/Edit.jpg" alt="HomePage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/PokemonList/Add.jpg')">
+                    <img src="assets/images/PokemonList/Add.jpg" alt="Addpage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/PokemonList/Delete.jpg')">
+                    <img src="assets/images/PokemonList/Delete.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+
+                
+
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/PokemonList/HomePage.jpg" alt="Home Page" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/PokemonList/Edit.jpg" alt="Edit" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/PokemonList/Add.jpg" alt="Add" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/PokemonList/Delete.jpg" alt="Delete" class="preview-image" onclick="setCarousel(3)">
+            </div>
+            
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>About the Project</h2>
+                <div class="project-links">
+                    <a href="https://github.com/Nick-23049894/23049894_C237_GA_Submission" class="action-button github"
+                        target="_blank">GitHub</a>
+                    <a href="https://yourvideolink.com" target="_blank" class="action-button youtube">
+                        Video
+                    </a>
+                </div>
+            </div>
+            <p id="project-description">
+                The <strong>Pokémon Card Manager App</strong> is a feature-rich mobile application designed to help users manage
+                their Pokémon cards effortlessly. Whether you're organizing by type, modifying card details, or loading dynamic images,
+                this app provides a seamless experience with intuitive navigation and functionalities.
+            </p>
+            <ul>
+                <li><strong>Home Screen:</strong> View Pokémon cards categorized by type, such as Water, Fire, Grass, and Rock.</li>
+                <li><strong>Edit Cards:</strong> Update Pokémon names and card numbers easily from the edit screen.</li>
+                <li><strong>Delete Cards:</strong> Remove unwanted Pokémon cards with a simple delete action and confirmation.</li>
+                <li><strong>Add New Cards:</strong> Add new Pokémon cards by entering the name, card number, and type.</li>
+                <li><strong>Dynamic Images:</strong> Uses URLs for images, allowing real-time updates and scalable image management.</li>
+                <li><strong>Dynamic Updates:</strong> All changes reflect immediately on the home screen for an organized view.</li>
+            </ul>
+            <p>
+                With this app, managing your Pokémon card collection is more enjoyable, efficient, and visually dynamic.
+            </p>
+        </div>
+        
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>
