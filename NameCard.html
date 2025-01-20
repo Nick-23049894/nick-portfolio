@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - Name Card</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Name Card Design</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/NameCard/FinalFront.jpg')">
+                    <img src="assets/images/NameCard/FinalFront.jpg" alt="Final Front" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/NameCard/FinalBack.jpg')">
+                    <img src="assets/images/NameCard/FinalBack.jpg" alt="Final Back" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/NameCard/NameCardMoodBoard.jpg')">
+                    <img src="assets/images/NameCard/NameCardMoodBoard.jpg" alt="NameCardMoodBoard" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/NameCard/Sketche1.jpg')">
+                    <img src="assets/images/NameCard/Sketche1.jpg" alt="Sketche 1" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/NameCard/Sketche2.jpg')">
+                    <img src="assets/images/NameCard/Sketche2.jpg" alt="Sketche 2" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/NameCard/Sketche3.jpg')">
+                    <img src="assets/images/NameCard/Sketche3.jpg" alt="Sketche 3" class="carousel-image">
+                </div>
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/NameCard/FinalFront.jpg" alt="Final Front" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/NameCard/FinalBack.jpg" alt="Final Back" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/NameCard/NameCardMoodBoard.jpg" alt="NameCardMoodBoard" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/NameCard/Sketche1.jpg" alt="Sketche 1" class="preview-image" onclick="setCarousel(3)">
+                <img src="assets/images/NameCard/Sketche2.jpg" alt="Sketche 2" class="preview-image" onclick="setCarousel(5)">
+                <img src="assets/images/NameCard/Sketche3.jpg" alt="Sketche 3" class="preview-image" onclick="setCarousel(6)">
+            </div>
+            
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>Design Rationale</h2>
+            </div>
+            <div class="rationale-section">
+                <h3>Front:</h3>
+                <p>
+                    I used a <strong>vertical design</strong> to stand out from the standard horizontal layout, making it more memorable. 
+                    The logo's placement ensures it’s immediately recognizable and associated with my name and profession. 
+                    Displaying my name and profession in a clear, easy-to-read font ensures visitors quickly understand who I am and what I do.
+                </p>
+            </div>
+            <div class="rationale-section">
+                <h3>Back:</h3>
+                <p>
+                    I decided to stick to a <strong>left-aligned layout</strong> to keep my contact information clean, organized, and easy to read. 
+                    Maintaining the vertical design and left-aligned layout ensures consistency throughout the card. Contact information is presented in an 
+                    easy-to-read font, and I focused on the most essential details to avoid clutter and keep the design simple.
+                </p>
+            </div>
+            <div class="rationale-details">
+                <h3>Fonts:</h3>
+                <p>Franklin Gothic Heavy, Franklin Gothic Book</p>
+                <h3>Colors:</h3>
+                <p>#FFFEF1, #084563</p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

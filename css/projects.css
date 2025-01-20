@@ -367,7 +367,6 @@ body {
 .filter-buttons {
     display: wrap;
     justify-content: wrap;
-    gap: 10px;
     width: 100%;
     max-width: 800px;
 }
@@ -386,6 +385,7 @@ body {
     position: relative;
     overflow: hidden;
     transition: background-color 0.3s ease, box-shadow 0.2s ease-in;
+    margin: 8px;
 }
 
 /* Hover effects */
@@ -537,17 +537,15 @@ body {
     display: none;
 }
 
-
 .project-card a{
     text-decoration: none;
 }
-
-
 
 .project-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    text-align: center;
 }
 
 .project-info {

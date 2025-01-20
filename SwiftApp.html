@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick - Swift App Project</title>
+    <title>Nick - Kangroo</title>
     <link rel="stylesheet" href="/css/projectdetails.css">
 </head>
 
@@ -22,42 +22,28 @@
     </header>
     <div class="project-details-container">
         <!-- Carousel Section -->
-        <h1 id="project-title" class="carousel-title">Swift Banking App</h1>
+        <h1 id="project-title" class="carousel-title">Kangroo</h1>
         <div class="carousel-container">
 
             <div class="carousel">
-                <!-- Carousel Video -->
-                <div class="carousel-item active">
-                    <div class="carousel-video-container">
-                        <iframe 
-                            class="carousel-video" 
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ" 
-                            title="YouTube video" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
                 <!-- Carousel Images -->
-                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/LoginPage.jpg')">
+                <div class="carousel-item active" onclick="openModal('assets/images/SwiftApp/LoginPage.jpg')">
                     <img src="assets/images/SwiftApp/LoginPage.jpg" alt="Login Page" class="carousel-image">
                 </div>
                 <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/CreateUser.jpg')">
                     <img src="assets/images/SwiftApp/CreateUser.jpg" alt="Create User Page" class="carousel-image">
                 </div>
                 <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/ShopPage.jpg')">
-                    <img src="assets/images/SwiftApp/ShopPage.jpg" alt="shop Page" class="carousel-image">
+                    <img src="assets/images/SwiftApp/ShopPage.jpg" alt="Shop Page" class="carousel-image">
                 </div>
                 <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/ProductPage.jpg')">
                     <img src="assets/images/SwiftApp/ProductPage.jpg" alt="Product Page" class="carousel-image">
                 </div>
                 <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/CartPage.jpg')">
-                    <img src="assets/images/SwiftApp/CartPage.jpg" alt="cart Page" class="carousel-image">
+                    <img src="assets/images/SwiftApp/CartPage.jpg" alt="Cart Page" class="carousel-image">
                 </div>
                 <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/checkout.jpg')">
-                    <img src="assets/images/SwiftApp/checkout.jpg" alt="checkout Page" class="carousel-image">
+                    <img src="assets/images/SwiftApp/checkout.jpg" alt="Checkout Page" class="carousel-image">
                 </div>
                 <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/ShippingPage.jpg')">
                     <img src="assets/images/SwiftApp/ShippingPage.jpg" alt="Shipping Page" class="carousel-image">
@@ -72,19 +58,23 @@
 
             <!-- Image Previews -->
             <div class="carousel-previews">
-                <img src="assets/images/SwiftApp/.jpg" alt="Video" class="preview-image" onclick="setCarousel(0)">
-                <img src="assets/images/SwiftApp/LoginPage.jpg" alt="Login Page" class="preview-image" onclick="setCarousel(1)">
-                <img src="assets/images/SwiftApp/CreateUser.jpg" alt="CreateUser" class="preview-image" onclick="setCarousel(2)">
-                <img src="assets/images/SwiftApp/ShopPage.jpg" alt="Shop Page" class="preview-image" onclick="setCarousel(3)">
-                <img src="assets/images/SwiftApp/ProductPage.jpg" alt="Product Page" class="preview-image" onclick="setCarousel(4)">
-                <img src="assets/images/SwiftApp/CartPage.jpg" alt="Cart Page" class="preview-image" onclick="setCarousel(5)">
-                <img src="assets/images/SwiftApp/checkout.jpg" alt="checkout Page" class="preview-image" onclick="setCarousel(6)">
-                <img src="assets/images/SwiftApp/ShippingPage.jpg" alt="shipping Page" class="preview-image" onclick="setCarousel(7)">
+                <img src="assets/images/SwiftApp/LoginPage.jpg" alt="Login Page" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/SwiftApp/CreateUser.jpg" alt="CreateUser" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/SwiftApp/ShopPage.jpg" alt="Shop Page" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/SwiftApp/ProductPage.jpg" alt="Product Page" class="preview-image" onclick="setCarousel(3)">
+                <img src="assets/images/SwiftApp/CartPage.jpg" alt="Cart Page" class="preview-image" onclick="setCarousel(4)">
+                <img src="assets/images/SwiftApp/checkout.jpg" alt="Checkout Page" class="preview-image" onclick="setCarousel(5)">
+                <img src="assets/images/SwiftApp/ShippingPage.jpg" alt="Shipping Page" class="preview-image" onclick="setCarousel(6)">
             </div>
         </div>
 
         <div class="project-description">
-            <h2>About the Project</h2>
+            <div class="title">
+                <h2>About the Project</h2>
+                <div class="project-links">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="action-button youtube" target="_blank">Video</a>
+                </div>
+            </div>
             <p id="project-description">
                 The <strong>Kangroo App</strong> is a cutting-edge shopping application developed using <strong>Swift</strong> 
                 and <strong>Xcode</strong>. Designed to provide a seamless and fast shopping experience, the app integrates innovative 
@@ -112,11 +102,6 @@
                 The <strong>Kangroo App</strong> stands out for its innovative features and user-centric design, making it an ideal 
                 choice for fast and efficient shopping experiences.
             </p>
-            <div class="project-links">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="project-button github-button">
-                    Watch Video Demo
-                </a>
-            </div>
         </div>
         
         

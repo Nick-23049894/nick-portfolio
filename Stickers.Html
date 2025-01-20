@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - Stickers</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Stickers Design</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/Stickers/Final-Art.jpg')">
+                    <img src="assets/images/Stickers/Final-Art.jpg" alt="Final Art" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/Stickers/Sketche1.jpg')">
+                    <img src="assets/images/Stickers/Sketche1.jpg" alt="Sketche 1" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/Stickers/Sketche2.jpg')">
+                    <img src="assets/images/Stickers/Sketche2.jpg" alt="Sketche 2" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/Stickers/StickerMoodBoard.jpg')">
+                    <img src="assets/images/Stickers/StickerMoodBoard.jpg" alt="Sticker MoodBoard" class="carousel-image">
+                </div>
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/Stickers/Final-Art.jpg" alt="Final Art" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/Stickers/Sketche1.jpg" alt="Sketche 1" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/Stickers/Sketche2.jpg" alt="Sketch e2" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/Stickers/StickerMoodBoard.jpg" alt="Sticker MoodBoard" class="preview-image" onclick="setCarousel(3)">
+   
+            </div>
+            
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>Design Rationale</h2>
+            </div>
+            <p>
+                I’ve created a unique set of stickers inspired by <strong>poker cards</strong>, reflecting my personality and 
+                reactions to various situations. Each sticker is designed with a specific suit and emotion in mind, showcasing 
+                different aspects of my personality:
+            </p>
+            <ul>
+                <li><strong>Clubs:</strong> "Silent Judgement" - for when I’m left speechless.</li>
+                <li><strong>Spades:</strong> "Haha, no answer" - my response to tough questions.</li>
+                <li><strong>Diamonds:</strong> "I’m so done" - when I’ve reached my limit and need a break.</li>
+                <li><strong>Hearts:</strong> "Confused" - my expression when asked to do something unfamiliar.</li>
+                <li><strong>King:</strong> "Evil Smile" - representing my mischievous side.</li>
+            </ul>
+            <p>
+                The decision to use <strong>poker card icons</strong> stems from my love for card games, which I wanted to 
+                incorporate into my design. These stickers not only express my emotions but also add a touch of personality 
+                to my interactions, making them both relatable and fun!
+            </p>
+        </div>
+        
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>
