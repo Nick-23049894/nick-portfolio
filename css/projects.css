@@ -372,8 +372,7 @@ body {
 
 /* Projects Section */
 .projects-section {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
     background-color: #010110;
     color: white;
     min-height: 60vh;
@@ -506,8 +505,7 @@ body {
 
 
 .paddings {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 .paddings h2 {
     padding-top: 10px;
