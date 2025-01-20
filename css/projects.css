@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    max-width: 1600px;
 }
 
 /* Body Styles */
@@ -124,7 +123,7 @@ body {
 .carousel-container {
     display: flex;
     position: relative;
-    width: 100%;
+    max-width: 1600px;
     height: 500px;
     background-color: #010110;
     overflow: hidden;
