@@ -118,20 +118,30 @@ body {
     }
 }
 
+.parent-container {
+    justify-content: center;
+    align-items: center;    
+    min-height: 80vh;     
+}
+
 
 /* Carousel Styles */
 .carousel-container {
     display: flex;
-    position: relative;
+    flex-direction: row;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    margin: auto;
     max-width: 1600px;
     height: 500px;
-    background-color: #010110;
-    overflow: hidden;
-    color: white;
-    margin-top: 100px;
     padding: 0 5%;
     gap: 10px;
+    position: relative;
+    background-color: #010110;
+    color: white;
+    margin-top: 100px;
 }
+
 
 .carousel-container img {
     border-radius: 8px;
@@ -235,26 +245,6 @@ body {
     animation: sh02 0.5s 0s linear;
 }
 
-/* Keyframes for the hover animation */
-@keyframes sh02 {
-    0% {
-        opacity: 0;
-        width: 0;
-        left: 0%;
-    }
-    50% {
-        opacity: 0.5;
-        width: 200%;
-        left: 50%;
-    }
-    100% {
-        opacity: 0;
-        width: 0;
-        left: 100%;
-    }
-}
-
-
 /* Pseudo-element for glowing streak animation */
 .carousel-button::before {
     content: '';
@@ -269,22 +259,6 @@ body {
     box-shadow: 0 0 50px 30px #fff;
     transform: skewX(-20deg);
 }
-
-/* Keyframe animation for glowing streak */
-@keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
-    50% {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        left: 100%;
-    }
-}
-
 
 /* Sidebar Previews */
 .carousel-sidebar {
@@ -346,30 +320,16 @@ body {
     object-fit: cover;
 }
 
-/* Keyframe animation for glowing streak */
-@keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
-    50% {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        left: 100%;
-    }
-}
-
-
-
 /* Filter Buttons */
 .filter-buttons {
-    display: wrap;
-    justify-content: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align buttons */
     width: 100%;
     max-width: 800px;
+    margin: auto; /* Center container horizontally */
 }
+
 
 
 /* Base styling for .btn */
@@ -420,22 +380,6 @@ body {
     box-shadow: 0 0 50px 30px #fff;
     transform: skewX(-20deg);
 }
-
-/* Keyframe animation */
-@keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
-    50% {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        left: 100%;
-    }
-}
-
 
 /* Projects Section */
 .projects-section {
@@ -578,4 +522,23 @@ body {
 .paddings h2 {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .carousel-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .carousel-sidebar {
+        flex-direction: row;
+        overflow-x: auto;
+    }
 }
