@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-
 /* Body Styles */
 body {
     overflow-x: hidden;
@@ -12,7 +11,6 @@ body {
     color: white;
     background-color: #010110;
 }
-
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -29,7 +27,6 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .navbar-logo {
     display: flex;
     align-items: center;
@@ -38,21 +35,18 @@ body {
     cursor: pointer;
     white-space: nowrap;
 }
-
 .logo-image {
     height: 50px;
     width: auto;
     cursor: pointer;
     margin-right: 10px;
 }
-
 /* Navbar Links */
 .navbar-links {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .navbar-links a {
     text-decoration: none;
     color: white;
@@ -64,13 +58,11 @@ body {
     white-space: nowrap;
     transition: color 0.3s ease, box-shadow 0.3s ease;
 }
-
 /* Hover Effect */
 .navbar-links a:hover {
     color: #6340FF; /* Change text color */
     box-shadow: 0 0 20px rgba(99, 64, 255, 0.6); /* Glowing purple shadow */
 }
-
 /* Underline Animation */
 .navbar-links a::after {
     content: '';
@@ -82,11 +74,9 @@ body {
     background-color: #6340FF; /* Purple underline */
     transition: width 0.3s ease;
 }
-
 .navbar-links a:hover::after {
     width: 100%; /* Expand underline on hover */
 }
-
 /* Glowing Streak Animation */
 .navbar-links a::before {
     content: '';
@@ -103,7 +93,6 @@ body {
     transition: none;
     animation: streak 0.5s 0s linear;
 }
-
 @keyframes streak {
     from {
         opacity: 0;
@@ -120,8 +109,8 @@ body {
 
 .parent-container {
     justify-content: center;
-    align-items: center;    
-    min-height: 80vh;     
+    align-items: center;  
+    margin-bottom: 20px;    
 }
 
 
@@ -383,7 +372,8 @@ body {
 
 /* Projects Section */
 .projects-section {
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #010110;
     color: white;
     min-height: 60vh;
