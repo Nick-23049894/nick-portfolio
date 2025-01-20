@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Nick-Portfolio</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="#home" onclick="scrollToHome()">Home</a>
+            <a onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <h1 class="hero-title">Nick Ho</h1>
+        <p class="hero-subtitle">Software Developer</p>
+        <button class="arrow-down" onclick="scrollToAbout()">↓</button>
+    </div>
+
+
+    <!-- About Section -->
+    <div class="page-container">
+        <!-- Section 1: Image and About Me -->
+        <section class="section about-me" id="about">
+            <img src="assets/images/AboutmeImg.jpg" alt="About Me" class="section-image">
+            <div class="about-me-text">
+                <h2>About Me</h2>
+                <p>
+                    My name is Nick, and I am a student at Republic Polytechnic with foundational skills in software
+                    development.
+                    I have experience in web development, mobile app development, and video editing.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: Skills -->
+        <section class="section title-image">
+            <div class="title-text">
+                <h2 class="section-title">Personal Interests and Skills</h2>
+                <p>
+                    My interests include video editing, exploring immersive gaming, 3D modeling and printing, and
+                    learning new technologies.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <img src="assets/icons/Icon1.png" alt="Html" class="skill-icon">
+                <img src="assets/icons/Icon2.png" alt="Css" class="skill-icon">
+                <img src="assets/icons/Icon3.png" alt="JavaScript" class="skill-icon">
+                <img src="assets/icons/Icon4.png" alt="Node.js" class="skill-icon">
+                <img src="assets/icons/Icon8.png" alt="Python" class="skill-icon">
+                <img src="assets/icons/Icon5.png" alt="Adobe Photoshop" class="skill-icon">
+                <img src="assets/icons/Icon6.png" alt="Adobe Illustrator" class="skill-icon">
+                <img src="assets/icons/Icon7.png" alt="Adobe Premier Pro" class="skill-icon">
+            </div>
+        </section>
+
+        <!-- Section 3: Clickable Buttons -->
+        <section class="section clickable-images">
+            <h2>Education and Achievements</h2>
+            <div class="buttons-container">
+                <button class="content-button active" onclick="showContent(1)">Bukit Merah Secondary</button>
+                <button class="content-button" onclick="showContent(2)">ITE</button>
+                <button class="content-button" onclick="showContent(3)">Republic Polytechnic</button>
+            </div>
+            <div class="content-display">
+                <div id="content-1" class="content active">
+                    <h2>Bukit Merah Secondary</h2>
+                    <ul>
+                        <li>4 N-Levels Distinctions</li>
+                        <li>Edusave Merit Bursary, Top 25%</li>
+                        <li>Edusave Eagles Award</li>
+                    </ul>
+                </div>
+                <div id="content-2" class="content">
+                    <h2>ITE</h2>
+                    <ul>
+                        <li>Higher NITEC Certificate in IT Application Development</li>
+                    </ul>
+                </div>
+                <div id="content-3" class="content">
+                    <h2>Republic Polytechnic</h2>
+                    <ul>
+                        <li>Pursuing a Digital Design and Development</li>
+                        <li>Director's Roll of Honor, AY2023 Semester 1</li>
+                        <li>PCEP - Certified Entry-Level Python Programmer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect With Me Section -->
+        <section class="connect-with-me" id="#contact">
+            <h2>Connect With Me</h2>
+            <div class="contact-container">
+                <!-- GitHub -->
+                <a href="https://github.com/yourusername" target="_blank" class="contact-item">
+                    <img src="assets/icons/github.png" alt="GitHub" class="contact-icon">
+                    <span>GitHub</span>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-item">
+                    <img src="assets/icons/linkedin.png" alt="LinkedIn" class="contact-icon">
+                    <span>LinkedIn</span>
+                </a>
+                <!-- Email -->
+                <a href="mailto:your-email@example.com" class="contact-item">
+                    <img src="assets/icons/contact-mail.png" alt="Email" class="contact-icon">
+                    <span>Email</span>
+                </a>
+                <!-- Location -->
+                <div class="contact-item">
+                    <img src="assets/icons/location.png" alt="Location" class="contact-icon">
+                    <span>Singapore</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

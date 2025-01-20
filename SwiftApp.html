@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - Swift App Project</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Swift Banking App</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Video -->
+                <div class="carousel-item active">
+                    <div class="carousel-video-container">
+                        <iframe 
+                            class="carousel-video" 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ" 
+                            title="YouTube video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Carousel Images -->
+                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/LoginPage.jpg')">
+                    <img src="assets/images/SwiftApp/LoginPage.jpg" alt="Login Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/CreateUser.jpg')">
+                    <img src="assets/images/SwiftApp/CreateUser.jpg" alt="Create User Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/ShopPage.jpg')">
+                    <img src="assets/images/SwiftApp/ShopPage.jpg" alt="shop Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/ProductPage.jpg')">
+                    <img src="assets/images/SwiftApp/ProductPage.jpg" alt="Product Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/CartPage.jpg')">
+                    <img src="assets/images/SwiftApp/CartPage.jpg" alt="cart Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/checkout.jpg')">
+                    <img src="assets/images/SwiftApp/checkout.jpg" alt="checkout Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/SwiftApp/ShippingPage.jpg')">
+                    <img src="assets/images/SwiftApp/ShippingPage.jpg" alt="Shipping Page" class="carousel-image">
+                </div>
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+            </div>
+
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/SwiftApp/.jpg" alt="Video" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/SwiftApp/LoginPage.jpg" alt="Login Page" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/SwiftApp/CreateUser.jpg" alt="CreateUser" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/SwiftApp/ShopPage.jpg" alt="Shop Page" class="preview-image" onclick="setCarousel(3)">
+                <img src="assets/images/SwiftApp/ProductPage.jpg" alt="Product Page" class="preview-image" onclick="setCarousel(4)">
+                <img src="assets/images/SwiftApp/CartPage.jpg" alt="Cart Page" class="preview-image" onclick="setCarousel(5)">
+                <img src="assets/images/SwiftApp/checkout.jpg" alt="checkout Page" class="preview-image" onclick="setCarousel(6)">
+                <img src="assets/images/SwiftApp/ShippingPage.jpg" alt="shipping Page" class="preview-image" onclick="setCarousel(7)">
+            </div>
+        </div>
+
+        <div class="project-description">
+            <h2>About the Project</h2>
+            <p id="project-description">
+                The <strong>Kangroo App</strong> is a cutting-edge shopping application developed using <strong>Swift</strong> 
+                and <strong>Xcode</strong>. Designed to provide a seamless and fast shopping experience, the app integrates innovative 
+                features to enhance user convenience and satisfaction.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>User Authentication:</strong> Includes secure login and user creation with validation to ensure data accuracy and safety.</li>
+                <li><strong>Change Password Feature:</strong> Allows users to securely update their password, enhancing account security.</li>
+                <li><strong>User Data Storage:</strong> Stores user information in a secure and encrypted format to ensure privacy and protection.</li>
+                <li><strong>Top-Up Feature:</strong> Allows users to add funds quickly by simply tapping on the top-up option.</li>
+                <li><strong>Shake for Discount:</strong> Users can shake their device during checkout to unlock special discounts, adding an element of fun and engagement.</li>
+                <li><strong>Quick Purchase:</strong> A "Buy Now" feature enables users to purchase a single item quickly without adding it to the cart.</li>
+                <li><strong>Cart Functionality:</strong> 
+                    <ul>
+                        <li>Add items to the cart.</li>
+                        <li>Purchase all items in the cart with a single action.</li>
+                        <li>Sort cart items based on various filters for better organization.</li>
+                    </ul>
+                </li>
+                <li><strong>Delivery or Pickup Options:</strong> Users can choose between delivery or pickup based on their preference.</li>
+                <li><strong>Weather-Based Recommendations:</strong> The app suggests delivery or pickup based on the current weather conditions, ensuring user convenience.</li>
+            </ul>
+            <p>
+                The <strong>Kangroo App</strong> stands out for its innovative features and user-centric design, making it an ideal 
+                choice for fast and efficient shopping experiences.
+            </p>
+            <div class="project-links">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="project-button github-button">
+                    Watch Video Demo
+                </a>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

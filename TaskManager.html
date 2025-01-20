@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">NodeJs Task Manager</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/TaskManager/LoginPage.jpg')">
+                    <img src="assets/images/TaskManager/LoginPage.jpg" alt="LoginPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/TaskManager/HomePage.jpg')">
+                    <img src="assets/images/TaskManager/HomePage.jpg" alt="HomePage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/TaskManager/Addpage.jpg')">
+                    <img src="assets/images/TaskManager/Addpage.jpg" alt="Addpage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/TaskManager/DetailsPage.jpg')">
+                    <img src="assets/images/TaskManager/DetailsPage.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/TaskManager/EditPage.jpg')">
+                    <img src="assets/images/TaskManager/EditPage.jpg" alt="EditPage" class="carousel-image">
+                </div>
+
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/TaskManager/LoginPage.jpg" alt="LoginPage" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/TaskManager/HomePage.jpg" alt="HomePage" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/TaskManager/Addpage.jpg" alt="Addpage" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/TaskManager/DetailsPage.jpg" alt="DetailsPage" class="preview-image" onclick="setCarousel(3)">
+                <img src="assets/images/TaskManager/EditPage.jpg" alt="EditPage" class="preview-image" onclick="setCarousel(4)">
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>About the Project</h2>
+                <div class="project-links">
+                    <a href="https://github.com/Nick-23049894/23049894_C237_GA_Submission" class="action-button github"
+                        target="_blank">GitHub</a>
+                    <a href="https://c237-miniproject-irid.onrender.com/" class="action-button demo"
+                        target="_blank">Live Website</a>
+                    <a href="https://youtube.com/your-video" class="action-button youtube" target="_blank">Video</a>
+                </div>
+            </div>
+            <p>
+                The <strong>Task Manager App</strong> is a robust and efficient web application built using
+                <strong>Node.js</strong>
+                and powered by a <strong>SQL database</strong> to ensure reliable data storage and retrieval. It is
+                designed
+                to streamline task management with a focus on functionality, performance, and user-friendly features.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>CRUD Operations:</strong> Create, Read, Update, and Delete tasks with ease. Manage your
+                    tasks
+                    efficiently with intuitive controls.</li>
+                <li><strong>Data Validation:</strong> Ensures that all user inputs are validated before being processed
+                    or stored,
+                    reducing errors and ensuring data integrity.</li>
+                <li><strong>SQL Integration:</strong> Uses SQL for structured data management and supports complex
+                    queries for better
+                    task organization and retrieval.</li>
+                <li><strong>Scalable Architecture:</strong> Built with Node.js, making it lightweight and capable of
+                    handling
+                    multiple users simultaneously.</li>
+            </ul>
+            <p>
+                The <strong>Task Manager App</strong> is an ideal solution for individuals or teams looking for a
+                dependable tool to
+                manage their daily tasks effectively.
+            </p>
+        </div>
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

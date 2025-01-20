@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment System</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Course Enrollment System</h1>
+        <div class="carousel-container">
+            <!-- Carousel Images -->
+            <div class="carousel">
+                <div class="carousel-item active" onclick="openModal('assets/images/CourseEnrollment/HomePage.jpg')">
+                    <img src="assets/images/CourseEnrollment/HomePage.jpg" alt="Home Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/CourseEnrollment/Diplomas.jpg')">
+                    <img src="assets/images/CourseEnrollment/Diplomas.jpg" alt="Diplomas Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/CourseEnrollment/Register.jpg')">
+                    <img src="assets/images/CourseEnrollment/Register.jpg" alt="Register Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/CourseEnrollment/Register2.jpg')">
+                    <img src="assets/images/CourseEnrollment/Register2.jpg" alt="Register Confirmation Page" class="carousel-image">
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="image-modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <div id="caption"></div>
+            </div>
+        
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/CourseEnrollment/HomePage.jpg" alt="Home Page" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/CourseEnrollment/Diplomas.jpg" alt="Diplomas Page" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/CourseEnrollment/Register.jpg" alt="Register Page" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/CourseEnrollment/Register2.jpg" alt="Register Confirmation Page" class="preview-image" onclick="setCarousel(3)">
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <h2>About the Project</h2>
+            <p id="project-description">
+                This project is a dynamic web application built with <strong>React</strong> and features seamless navigation 
+                powered by <strong>React Router DOM</strong>. It includes nested routing and a dedicated 
+                <strong>Registration Page</strong> to enhance user interaction and functionality.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>React Router DOM:</strong> Implements routing for smooth transitions between pages and components.</li>
+                <li><strong>Nested Routes:</strong> Supports nested routes for organizing and structuring the application effectively.</li>
+                <li><strong>Registration Page:</strong> Includes a user-friendly registration page with form validation to handle 
+                    user sign-ups securely.</li>
+            </ul>
+            <p>
+                This project showcases the practical use of React Router DOM for managing complex routing structures while 
+                maintaining a clean and efficient user interface.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/Nick-23049894/c219-L9-Ps/tree/master" target="_blank" class="project-button github-button">
+                    View on GitHub
+                </a>
+                <a href="https://c219-course-enrollment-portal.vercel.app/" target="_blank" class="project-button live-button">
+                    Live Website
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

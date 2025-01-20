@@ -1,0 +1,583 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    overflow-x: hidden;
+    font-family: "Franklin Gothic Heavy", sans-serif;
+    color: white;
+    background-color: #010110;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(30, 30, 36, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-links a:hover {
+    color: #6340FF; /* Change text color */
+    box-shadow: 0 0 20px rgba(99, 64, 255, 0.6); /* Glowing purple shadow */
+}
+
+/* Underline Animation */
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6340FF; /* Purple underline */
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Glowing Streak Animation */
+.navbar-links a::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+    transition: none;
+    animation: streak 0.5s 0s linear;
+}
+
+@keyframes streak {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+
+/* Carousel Styles */
+.carousel-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #010110;
+    overflow: hidden;
+    color: white;
+    margin-top: 100px;
+    padding: 0 5%;
+    gap: 10px;
+}
+
+.carousel-container img {
+    border-radius: 8px;
+}
+
+.carousel {
+    flex: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-item.slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 0;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.carousel-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.carousel-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px;
+}
+
+.carousel-button {
+    display: inline-block; /* Makes the link behave like a button */
+    text-decoration: none; /* Removes the default underline */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6340FF; /* Purple background */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect with glow and animation */
+.carousel-button:hover {
+    background-color: #4e32d4; /* Slightly darker purple */
+    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.6); /* Glowing effect */
+}
+
+.carousel-button:hover::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+    animation: sh02 0.5s 0s linear;
+}
+
+/* Keyframes for the hover animation */
+@keyframes sh02 {
+    0% {
+        opacity: 0;
+        width: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 0.5;
+        width: 200%;
+        left: 50%;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        left: 100%;
+    }
+}
+
+
+/* Pseudo-element for glowing streak animation */
+.carousel-button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+}
+
+/* Keyframe animation for glowing streak */
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+
+/* Sidebar Previews */
+.carousel-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Hover effect with glow and animation */
+.sidebar-item:hover {
+    background-color: #6340FF; /* Purple background */
+    color: white;
+    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.7); /* Glowing purple shadow */
+}
+
+.sidebar-item:hover::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+    animation: sh02 0.5s 0s linear;
+}
+
+/* Active state */
+.sidebar-item.active {
+    background-color: #6340FF;
+    color: white;
+}
+
+/* Image styling */
+.sidebar-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Keyframe animation for glowing streak */
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+
+
+/* Filter Buttons */
+.filter-buttons {
+    display: wrap;
+    justify-content: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+/* Base styling for .btn */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #292922;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease-in;
+}
+
+/* Hover effects */
+.btn:hover {
+    background-color: #6340FF;
+    color: white;
+    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.7);
+}
+
+.btn:hover::before {
+    animation: sh02 0.5s 0s linear;
+}
+
+/* Active state */
+.btn.active {
+    background-color: #6340FF;
+    color: white;
+    box-shadow: 0 0 20px 5px rgba(99, 64, 255, 0.7);
+}
+
+/* Pseudo-element for the animation effect */
+.btn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+}
+
+/* Keyframe animation */
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+
+/* Projects Section */
+.projects-section {
+    padding: 5%;
+    background-color: #010110;
+    color: white;
+    min-height: 60vh;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+/* Outer card with solid purple background */
+.project-card {
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    background-color: #6340FF; /* Solid purple background */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Inner card with a solid background */
+.project-card2 {
+    background-color: #292922;
+    width: 200px;
+    height: 300px; /* Match height to parent */
+    border-radius: 5px;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover effect for the inner card */
+.project-card2:hover {
+    transform: scale(0.95); /* Slightly shrink inner card */
+    border-radius: 5px; /* Match parent on hover */
+}
+
+/* Hover effect for the outer card */
+.project-card:hover {
+    box-shadow: 0px 0px 40px 10px rgba(99, 64, 255, 0.6); /* Purple glow effect */
+    border-radius: 5px;
+}
+
+/* Pseudo-element for the glowing streak */
+.project-card:hover::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+    animation: sh02 0.5s 0s linear;
+}
+
+/* Keyframe animation */
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.project-card.fade-in {
+    opacity: 1;
+    transform: scale(1); /* Return to normal size */
+}
+
+.project-card.fade-out {
+    opacity: 0;
+    transform: scale(0.8); /* Slightly shrink during fade-out */
+}
+
+/* Ensure hidden cards are not part of the layout */
+.project-card.hidden {
+    display: none;
+}
+
+
+.project-card a{
+    text-decoration: none;
+}
+
+
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+    text-align: start;
+}
+
+.project-type {
+    color: #999;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.paddings {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.paddings h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

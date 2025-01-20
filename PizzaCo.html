@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Nick's Pizza Co.</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/BrikHaven/HomePage.jpg')">
+                    <img src="assets/images/PizzaCo/HomePage.jpg" alt="HomePage2" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/BrikHaven/HomePage1.jpg')">
+                    <img src="assets/images/PizzaCo/HomePage2.jpg" alt="HomePage2" class="carousel-image">
+                </div>
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/PizzaCo/HomePage.jpg" alt="Home Page" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/PizzaCo/HomePage2.jpg" alt="Home Page2" class="preview-image" onclick="setCarousel(1)">
+            </div>
+            
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <h2>About the Project</h2>
+            <p id="project-description">
+                <strong>Nick's Pizza Co.</strong> is a simple yet dynamic web application built with <strong>React</strong> to 
+                showcase a pizza shop's menu. It features real-time updates and a user-friendly interface to enhance the 
+                customer experience.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Search Functionality:</strong> Implements <code>useState</code> to filter and display menu items 
+                    dynamically based on user input, ensuring a seamless search experience.</li>
+                <li><strong>Real-Time Shop Status:</strong> Automatically updates the shop's status (open/closed) based on the 
+                    user's local time, providing accurate information about availability.</li>
+            </ul>
+            <p>
+                <strong>Nick's Pizza Co.</strong> demonstrates the power of React hooks like <code>useState</code> for state 
+                management and offers a practical example of integrating real-time functionality in web applications.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/Nick-23049894/C219_Pizza-App" target="_blank" class="project-button github-button">
+                    View on GitHub
+                </a>
+                <a href="https://c219-pizza-app.vercel.app/" target="_blank" class="project-button live-button">
+                    Live Website
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

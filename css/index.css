@@ -1,0 +1,430 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styles */
+body {
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Heavy", sans-serif;
+  color: #F2F4F7;
+  background-color: #010110;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(30, 30, 36, 0.8);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-links a:hover {
+  color: #6340FF; /* Change text color to purple */
+  box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.7); /* Glowing purple shadow */
+}
+
+.navbar-links a.active {
+  color: #6340FF; /* Active state purple color */
+  box-shadow: 0 0 20px 5px rgba(99, 64, 255, 0.7); /* Glow for active state */
+}
+
+/* Underline Animation */
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6340FF; /* Purple underline */
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%; /* Expand underline on hover and active state */
+}
+
+/* Glowing Streak Animation */
+.navbar-links a::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+  animation: streak 0.5s 0s linear;
+}
+
+/* Keyframe animation for glowing streak */
+@keyframes streak {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+
+
+/* Hero Section */
+.hero-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #010110),
+    url('../assets/images/bg1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  font-size: 7rem;
+  margin: 0;
+  font-family: "Franklin Gothic Heavy", sans-serif;
+}
+
+.hero-subtitle {
+  font-family: "Cascadia Code", monospace;
+  font-weight: normal;
+  font-size: 2.35rem;
+  color: #6340FF;
+}
+
+.arrow-down {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #F2F4F7;
+  background: none;
+  border: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-down:hover {
+  transform: translateY(10px);
+  /* Moves the arrow down slightly */
+  color: #ccc;
+  /* Optional color change */
+}
+
+/* About Section */
+.page-container {
+  padding-top: 30px;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* General Heading Styles */
+.page-container h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Franklin Gothic Heavy", sans-serif;
+  color: #F2F4F7;
+}
+
+.page-container p,
+li {
+  font-family: "Cascadia Code", monospace;
+  color: #F2F4F7;
+  list-style-type: none;
+}
+
+/* Section Styles */
+.section {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-image {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Me Section */
+.about-me {
+  flex-wrap: wrap;
+}
+
+.about-me-text {
+  max-width: 50%;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Title and Skills Section */
+.title-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.title-text {
+  flex: 1;
+  max-width: 60%;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 35%;
+  padding: 10px;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Clickable Buttons Section */
+.clickable-images {
+  flex-direction: column;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Base styling for .content-button */
+.content-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #F2F4F7;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, box-shadow 0.2s ease-in;
+}
+
+/* Hover effects */
+.content-button:hover {
+  color: #6340FF; /* Purple text on hover */
+  box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.7); /* Purple glowing shadow */
+}
+
+.content-button:hover::before {
+  animation: sh02 0.5s 0s linear; /* Glowing streak animation */
+}
+
+/* Active state */
+.content-button.active {
+  color: #6340FF; /* Purple text for active state */
+  box-shadow: 0 0 20px 5px rgba(99, 64, 255, 0.7); /* Purple glowing shadow */
+}
+
+/* Pseudo-element for glowing streak animation */
+.content-button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+
+/* Underline Animation */
+.content-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6340FF; /* Purple underline */
+  transition: width 0.3s ease;
+}
+
+.content-button:hover::after,
+.content-button.active::after {
+  width: 100%; /* Expand underline on hover and active state */
+}
+
+/* Keyframe animation for glowing streak */
+@keyframes sh02 {
+  from {
+      opacity: 0;
+      left: 0%;
+  }
+  50% {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+      left: 100%;
+  }
+}
+
+
+/* Content Display */
+.content-display {
+  position: relative;
+  min-height: 150px;
+}
+
+.content {
+  text-align: start;
+  opacity: 0;
+  transform: scale(0.95);
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.content.active {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  height: auto;
+}
+
+/* Connect With Me Section */
+.connect-with-me {
+  margin: 40px 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #292922;
+  border-radius: 8px;
+  color: #F2F4F7;
+}
+
+.connect-with-me h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Franklin Gothic Heavy", sans-serif;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Contact Items */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #F2F4F7;
+  font-family: "Cascadia Code", monospace;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: scale(1.1);
+  /* Slight zoom on hover */
+  color: blue;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
