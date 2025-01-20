@@ -356,7 +356,7 @@ body {
     border-radius: 6px;
     color: #ffffff;
     font-size: 1rem;
-    font-weight: bold;
+    font-family: "Cascadia Code", monospace;
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -432,6 +432,27 @@ body {
     box-shadow: 0 0 30px 5px rgba(108, 99, 255, 0.6);
     /* Purple glow */
 }
+
+/* Download Button */
+.action-button.download {
+    background-color: #007BFF; /* Vibrant Blue */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: "Cascadia Code", monospace;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-button.download:hover {
+    background-color: #0056b3; /* Darker Blue */
+    box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.6); /* Blue glow */
+}
+
 
 /* Keyframes for hover animation */
 @keyframes sh02 {

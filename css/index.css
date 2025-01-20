@@ -225,10 +225,9 @@ li {
 
 .about-me-text {
   max-width: 50%;
+  font-size: 1.5rem;
 }
-
 .about-me h2 {
-  font-size: 2rem;
   margin-bottom: 10px;
 }
 
@@ -238,6 +237,7 @@ li {
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
+  font-size: 1.5rem;
 }
 
 .title-text {
@@ -248,15 +248,17 @@ li {
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: ce;
   gap: 10px;
   width: 35%;
   padding: 10px;
 }
 
 .skill-icon {
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 80px;
+  max-height: 80px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -269,6 +271,10 @@ li {
 .clickable-images {
   flex-direction: column;
   text-align: center;
+}
+
+.clickable-images h2{
+  font-size: 2rem;
 }
 
 .buttons-container {
@@ -414,12 +420,36 @@ li {
   color: #F2F4F7;
   font-family: "Cascadia Code", monospace;
   transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+  
 }
 
 .contact-item:hover {
   transform: scale(1.1);
   /* Slight zoom on hover */
   color: blue;
+}
+
+.contact-item::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #F2F4F7;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: "Cascadia Code", monospace;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.contact-item:hover::after {
+  opacity: 1;
 }
 
 .contact-icon {

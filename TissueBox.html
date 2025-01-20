@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - 3D Printed Tissue box</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">3D Printed Tissue box</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/TaskManager/LoginPage.jpg')">
+                    <img src="assets/images/TissueBox/TissueBox.JPG" alt="Tissue Box" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/TaskManager/HomePage.jpg')">
+                    <img src="assets/images/TissueBox/TissueBox1.jpg" alt="Tissue Box 1" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/TaskManager/Addpage.jpg')">
+                    <img src="assets/images/TissueBox/TissueBox2.jpg" alt="Tissue Box 2" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/TaskManager/DetailsPage.jpg')">
+                    <img src="assets/images/TissueBox/TissueBox3.jpg" alt="Tissue Box3" class="carousel-image">
+                </div>
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/TissueBox/TissueBox.JPG" alt="TissueBox" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/TissueBox/TissueBox1.jpg" alt="TissueBox1" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/TissueBox/TissueBox2.jpg" alt="TissueBox2" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/TissueBox/TissueBox3.jpg" alt="TissueBox3" class="preview-image" onclick="setCarousel(3)">
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>About the 3D Model</h2>
+                <div class="project-links">
+                    <a href="assets/downloadables/TissueBox.3mf" class="action-button download" download="TissueBox_Design">Download Design</a>
+                </div>
+            </div>
+            <p>
+                A beautifully designed 3D-printed tissue box, crafted with precision using Fusion 360. This unique piece combines functionality with a touch of creativity, showcasing both design and engineering skills.
+            </p>
+        </div>
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

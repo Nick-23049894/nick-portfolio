@@ -448,7 +448,7 @@ body {
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
 }
 
 /* Outer card with solid purple background */
