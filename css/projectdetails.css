@@ -352,12 +352,12 @@ body {
 
 /* Live Demo Button */
 .action-button.demo {
-    background-color: #6340FF; /* Purple */
+    background-color: #10387d; /* Purple */
 }
 
 .action-button.demo:hover {
     background-color: #4e32d4; /* Darker Purple */
-    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.6); /* Purple glow */
+    box-shadow: 0 0 30px 5px rgba(6, 44, 133, 0.775); /* Purple glow */
 }
 
 /* YouTube Button */
@@ -368,6 +368,16 @@ body {
 .action-button.youtube:hover {
     background-color: #cc0000; /* Darker Red */
     box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Figma Button */
+.action-button.figma {
+    background-color: #6C63FF; /* Vibrant Purple */
+}
+
+.action-button.figma:hover {
+    background-color: #5A54E8; /* Slightly darker purple */
+    box-shadow: 0 0 30px 5px rgba(108, 99, 255, 0.6); /* Purple glow */
 }
 
 /* Keyframes for hover animation */

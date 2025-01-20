@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - Dine Or Dash</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Dine or Dash High Fidelity Wireframe</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/DineDash/HomePage.jpg')">
+                    <img src="assets/images/DineDash/HomePage.jpg" alt="LoginPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/OrderType.jpg')">
+                    <img src="assets/images/DineDash/OrderType.jpg" alt="HomePage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/Menupage.jpg')">
+                    <img src="assets/images/DineDash/Menupage.jpg" alt="Addpage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/ItemPage.jpg')">
+                    <img src="assets/images/DineDash/ItemPage.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/CartPage.jpg')">
+                    <img src="assets/images/DineDash/CartPage.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/Couponspage.jpg')">
+                    <img src="assets/images/DineDash/Couponspage.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/PaymentPage.jpg')">
+                    <img src="assets/images/DineDash/PaymentPage.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/ConfirmPage.jpg')">
+                    <img src="assets/images/DineDash/ConfirmPage.jpg" alt="DetailsPage" class="carousel-image">
+                </div>
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/DineDash/HomePage.jpg" alt="Home Page" class="preview-image" onclick="setCarousel(0)">
+                <img src="assets/images/DineDash/OrderType.jpg" alt="Edit" class="preview-image" onclick="setCarousel(1)">
+                <img src="assets/images/DineDash/Menupage.jpg" alt="Add" class="preview-image" onclick="setCarousel(2)">
+                <img src="assets/images/DineDash/ItemPage.jpg" alt="Delete" class="preview-image" onclick="setCarousel(3)">
+                <img src="assets/images/DineDash/CartPage.jpg" alt="Delete" class="preview-image" onclick="setCarousel(5)">
+                <img src="assets/images/DineDash/Couponspage.jpg" alt="Add" class="preview-image" onclick="setCarousel(6)">
+                <img src="assets/images/DineDash/PaymentPage.jpg" alt="Delete" class="preview-image" onclick="setCarousel(7)">
+                <img src="assets/images/DineDash/ConfirmPage.jpg" alt="Delete" class="preview-image" onclick="setCarousel(8)">
+            </div>
+            
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>About the Project</h2>
+                <div class="project-links">
+                    <a href="-https://www.figma.com/design/kASAGVNLnMBskptSaxwt3O/Dine-or-Dash-High-fidelity-Wireframe?node-id=0-1&t=xkAhQGiAw5TKQKmq-1" class="action-button figma"
+                        target="_blank">Figma</a>
+                    <a href="https://youtu.be/Lpg30W2ycco" target="_blank" class="action-button youtube">
+                        Video
+                    </a>
+                </div>
+            </div>
+            <p id="project-description">
+            </p>
+        </div>
+        
+        
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>
