@@ -17,7 +17,7 @@ function showContent(id) {
   // Scroll to the About section
   function scrollToAbout() {
     const aboutSection = document.querySelector('.about-me');
-    const offset = 80;
+    const offset = 100;
     const topPosition = aboutSection.getBoundingClientRect().top + window.scrollY - offset;
   
     window.scrollTo({ top: topPosition, behavior: 'smooth' });

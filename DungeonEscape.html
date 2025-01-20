@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick - Dine Or Dash</title>
+    <link rel="stylesheet" href="/css/projectdetails.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
+        </div>
+        <nav class="navbar-links">
+            <a href="/" onclick="scrollToHome()">Home</a>
+            <a href="/#about" onclick="scrollToAbout()">About</a>
+            <a href="/projects.html">Projects</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+    <div class="project-details-container">
+        <!-- Carousel Section -->
+        <h1 id="project-title" class="carousel-title">Dine or Dash High Fidelity Wireframe</h1>
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <!-- Carousel Images -->
+                <div class="carousel-item active" onclick="openModal('assets/images/DineDash/HomePage.jpg')">
+                    <img src="assets/images/DineDash/HomePage.jpg" alt="Home Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/OrderType.jpg')">
+                    <img src="assets/images/DineDash/OrderType.jpg" alt="Item Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/Menupage.jpg')">
+                    <img src="assets/images/DineDash/Menupage.jpg" alt="Menu" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/ItemPage.jpg')">
+                    <img src="assets/images/DineDash/ItemPage.jpg" alt="Item page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/CartPage.jpg')">
+                    <img src="assets/images/DineDash/CartPage.jpg" alt="Cart" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/Couponspage.jpg')">
+                    <img src="assets/images/DineDash/Couponspage.jpg" alt="Coupon Page" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/PaymentPage.jpg')">
+                    <img src="assets/images/DineDash/PaymentPage.jpg" alt="Payment" class="carousel-image">
+                </div>
+                <div class="carousel-item" onclick="openModal('assets/images/DineDash/ConfirmPage.jpg')">
+                    <img src="assets/images/DineDash/ConfirmPage.jpg" alt="Confirmation" class="carousel-image">
+                </div>
+                <!-- Modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <!-- Image Previews -->
+            <div class="carousel-previews">
+                <img src="assets/images/DineDash/HomePage.jpg" alt="Home Page" class="preview-image"
+                    onclick="setCarousel(0)">
+                <img src="assets/images/DineDash/OrderType.jpg" alt="Order Type" class="preview-image"
+                    onclick="setCarousel(1)">
+                <img src="assets/images/DineDash/Menupage.jpg" alt="Menu" class="preview-image"
+                    onclick="setCarousel(2)">
+                <img src="assets/images/DineDash/ItemPage.jpg" alt="Item Page" class="preview-image"
+                    onclick="setCarousel(3)">
+                <img src="assets/images/DineDash/CartPage.jpg" alt="Cart" class="preview-image"
+                    onclick="setCarousel(5)">
+                <img src="assets/images/DineDash/Couponspage.jpg" alt="Coupon Page" class="preview-image"
+                    onclick="setCarousel(6)">
+                <img src="assets/images/DineDash/PaymentPage.jpg" alt="Payment" class="preview-image"
+                    onclick="setCarousel(7)">
+                <img src="assets/images/DineDash/ConfirmPage.jpg" alt="Confirmation" class="preview-image"
+                    onclick="setCarousel(8)">
+            </div>
+
+        </div>
+
+        <!-- Description Section -->
+        <div class="project-description">
+            <div class="title">
+                <h2>About the Project</h2>
+                <div class="project-links">
+                    <a href="https://youtu.be/Lpg30W2ycco" target="_blank" class="action-button youtube">
+                        Video
+                    </a>
+                </div>
+            </div>
+            <!-- Confidential Disclaimer -->
+            <div class="confidential-disclaimer">
+                <h2>Confidential Disclaimer</h2>
+                <p>
+                    This Game Design Document has been prepared for review by Ho Xin Yuan Nick. All information is
+                    confidential and
+                    proprietary and should not be shared without written permission.
+                </p>
+            </div>
+
+            <!-- Overview of the Game -->
+            <div class="game-overview">
+                <h2>Overview of the Game</h2>
+                <p><strong>Genre:</strong> VR Escape Room</p>
+                <p><strong>Inspirational References:</strong></p>
+                <ul>
+                    <li>Skyrim VR</li>
+                    <li>Escape Simulator</li>
+                </ul>
+                <p><strong>Basic Narrative:</strong></p>
+                <p>
+                    Imprisoned in a medieval castle, the player's only hope of escape lies in exploration,
+                    puzzle-solving, and crafting
+                    essential items. By gathering resources and crafting keys, they can unlock doors, overcome
+                    obstacles, and solve puzzles.
+                    Each challenge conquered brings the player closer to freedom. However, the castle's secrets are
+                    well-guarded, requiring
+                    wits and resourcefulness to escape.
+                </p>
+                <h3>Concept Art:</h3>
+                <ul>
+                    <li>Jail Cell Concept from Minecraft (my own Minecraft world)
+                        <div class="documentImgs">
+                            <img src="assets/images/DungeonEscape/Document/JailCellConcept.jpg" alt="Jail Cell Concept"
+                                class="concept-image">
+                                <img src="assets/images/DungeonEscape/Document/JailCellConcept-2.jpg" alt="Jail Cell Concept"
+                                class="concept-image">
+                            </div>
+                    </li>
+                    <li>Top View of Room 1 - 3
+                        <div class="documentImgs">
+                            <img src="assets/images/DungeonEscape/Document/TopView1.jpg" alt="Top View of Room 1"
+                                class="concept-image">
+                        </div>
+                    </li>
+                    <li>Front View of Room 1 from Room 2
+                        <div class="documentImgs">
+                            <img src="assets/images/DungeonEscape/Document/FrontView1.jpg" alt="Front View of Room 1"
+                                class="concept-image">
+                        </div>
+                    </li>
+                    <li>Top Corner View of Room 1
+                        <div class="documentImgs">
+                            <img src="assets/images/DungeonEscape/Document/TopView2.jpg" alt="Top  View 2"
+                                class="concept-image">
+                        </div>
+                    </li>
+                    <li>Room 2
+                        <div class="documentImgs">
+                            <img src="assets/images/DungeonEscape/Document/Room2.jpg" alt="Room 2"
+                                class="concept-image">
+                        </div>
+                    </li>
+                    <li>Room 3 (incomplete)
+                        <div class="documentImgs">
+                            <img src="assets/images/DungeonEscape/Document/Room3.jpg" alt="Room 3"
+                                class="concept-image">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Unique Selling Points -->
+            <div class="unique-selling-points">
+                <h2>Unique Selling Points</h2>
+                <p>
+                    "Dungeon Escape" stands out in the VR escape room genre with its immersive storytelling, intricate
+                    puzzles, and richly
+                    detailed medieval environment. The game integrates narrative and gameplay, ensuring players uncover
+                    the story of their
+                    imprisonment as they progress. Key features include:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Teleportation Locomotion:</strong> Maximizes player comfort by reducing motion sickness,
+                        ensuring an intuitive
+                        exploration experience.
+                    </li>
+                    <li>
+                        <strong>Crafting System:</strong> Adds depth to gameplay by allowing players to gather resources
+                        and craft items, blending
+                        escape room mechanics with survival elements.
+                    </li>
+                    <li>
+                        <strong>Low Poly Art Style:</strong> The medieval dungeon's unique low-poly design creates an
+                        atmospheric and visually distinct
+                        environment.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Game Loop -->
+            <div class="game-loop">
+                <h2>Game Loop</h2>
+                <p><strong>Detailed Walkthrough:</strong></p>
+                <ol>
+                    <li>Spawn in the Room: Player starts in the first room of the medieval castle.</li>
+                    <li>Explore the Room: Look around, examine objects, and find clues.</li>
+                    <li>Collect Items: Gather resources for puzzle-solving.</li>
+                    <li>Solve Puzzles: Unlock new areas by solving challenges.</li>
+                    <li>Progress to Next Room: Repeat the process in each room.</li>
+                    <li>Final Escape: Solve the last puzzle to escape the castle.</li>
+                </ol>
+                <h4>Flow Chart</h4>
+                <img src="assets/images/DungeonEscape/Document/FlowChart.jpg" alt="Flow Chart" class="flow-chart">
+                <p><strong>Locomotion Style:</strong> Teleportation and smooth locomotion options for player comfort.
+                </p>
+            </div>
+
+            <!-- Puzzles -->
+            <div class="puzzles">
+                <h2>Puzzles</h2>
+                <h3>Puzzle 1: Escape the Jail Cell</h3>
+                <ul>
+                    <li>Find the hidden key.</li>
+                    <li>Use the key to unlock the door and progress to the next puzzle.</li>
+                </ul>
+                <h3>Puzzle 2: Find All Key Parts to Open the Door</h3>
+                <ul>
+                    <li>Find a clue and craft a key using resources like iron ingots, axes, and anvils.</li>
+                    <li>Arrange stones based on shields to unlock the door.</li>
+                </ul>
+                <h3>Puzzle 3: Tavern Room/Lunch Room</h3>
+                <ul>
+                    <li>Find and arrange items like cups, bottles, and plates.</li>
+                    <li>Unlock a hidden door by interacting with a book lever.</li>
+                </ul>
+                <h3>Puzzle 4: Final Room</h3>
+                <ul>
+                    <li>Follow clues to escape by solving box arrangement puzzles.</li>
+                </ul>
+            </div>
+
+            <!-- Gameplay Scope -->
+            <div class="gameplay-scope">
+                <h2>Gameplay Scope</h2>
+                <ul>
+                    <li><strong>Game Duration:</strong> Approximately 15 minutes.</li>
+                    <li><strong>Levels:</strong> Four distinct levels.</li>
+                    <li><strong>Average Playtime:</strong> 10-20 minutes per session.</li>
+                    <li><strong>Objectives:</strong> Solve puzzles and craft items to escape the castle.</li>
+                    <li><strong>Playable Characters:</strong> One.</li>
+                </ul>
+            </div>
+
+            <!-- Art Style -->
+            <div class="art-style">
+                <h2>Art Style</h2>
+                <p>Low poly medieval dungeons.</p>
+                <h4>Refference Images</h4>
+                <img src="assets/images/DungeonEscape/Document/RefferenceImg1.jpg" alt="Art Style" class="art-style-image">
+                <img src="assets/images/DungeonEscape/Document/RefferenceImg2.jpg" alt="Art Style" class="art-style-image">
+            </div>
+
+            <!-- Milestone Schedule -->
+            <div class="milestone-schedule">
+                <h2>Milestone Schedule</h2>
+                <ol>
+                    <li><strong>Milestone 1:</strong> Finalize Game Design Document.</li>
+                    <li><strong>Milestone 2:</strong> Develop a prototype showcasing the art style.</li>
+                    <li><strong>Milestone 3:</strong> Create a playable first room.</li>
+                    <li><strong>Milestone 4:</strong> Develop a polished vertical slice.</li>
+                    <li><strong>Milestone 5:</strong> Implement all puzzles.</li>
+                    <li><strong>Milestone 6:</strong> Test puzzles for balance and solvability.</li>
+                    <li><strong>Milestone 7:</strong> Final adjustments and polish.</li>
+                    <li><strong>Milestone 8:</strong> Submit the project.</li>
+                </ol>
+            </div>
+            <div class="StoryBoard">
+                <h2>Story Board</h2>
+                <img src="assets/images/DungeonEscape/Document/StoryBoard1.jpg" alt="Story Board" class="story-board">
+                <img src="assets/images/DungeonEscape/Document/StoryBoard2.jpg" alt="Story Board" class="story-board">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="projectDetails.js"></script>
+</body>
+
+</html>

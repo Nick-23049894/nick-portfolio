@@ -20,15 +20,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(30, 30, 36, 0.8); /* Semi-transparent background */
+    background: rgba(30, 30, 36, 0.8);
+    /* Semi-transparent background */
     color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-    backdrop-filter: blur(10px); /* Adds a blur effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px);
+    /* Adds a blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
 }
 
 .navbar-logo {
@@ -68,8 +71,10 @@ body {
 
 /* Hover Effect */
 .navbar-links a:hover {
-    color: #6340FF; /* Change text color */
-    box-shadow: 0 0 20px rgba(99, 64, 255, 0.6); /* Glowing purple shadow */
+    color: #6340FF;
+    /* Change text color */
+    box-shadow: 0 0 20px rgba(99, 64, 255, 0.6);
+    /* Glowing purple shadow */
 }
 
 /* Underline Animation */
@@ -80,12 +85,14 @@ body {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #6340FF; /* Purple underline */
+    background-color: #6340FF;
+    /* Purple underline */
     transition: width 0.3s ease;
 }
 
 .navbar-links a:hover::after {
-    width: 100%; /* Expand underline on hover */
+    width: 100%;
+    /* Expand underline on hover */
 }
 
 /* Glowing Streak Animation */
@@ -110,9 +117,11 @@ body {
         opacity: 0;
         left: 0%;
     }
+
     50% {
         opacity: 1;
     }
+
     to {
         opacity: 0;
         left: 100%;
@@ -124,31 +133,38 @@ body {
     padding-top: 90px;
     padding-left: 10%;
     padding-right: 10%;
-    max-width: 1400px; /* Increased for larger screens */
+    max-width: 1400px;
+    /* Increased for larger screens */
     margin: 0 auto;
-    text-align: center; /* Centered content */
+    text-align: center;
+    /* Centered content */
 }
 
 /* Carousel Styles */
 .carousel-container {
     position: relative;
-    margin-bottom: 40px; /* Increased margin for better separation */
+    margin-bottom: 40px;
+    /* Increased margin for better separation */
 }
 
 .carousel-title {
     text-align: start;
-    font-size: 2.5rem; /* Larger title size */
+    font-size: 2.5rem;
+    /* Larger title size */
     font-weight: bold;
     color: #FFFFFF;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Added shadow for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Added shadow for readability */
 }
 
 .carousel {
     position: relative;
     display: flex;
     overflow: hidden;
-    height: 52s0px; /* Adjusted height for 1920x1080 images */
-    border-radius: 10px; /* Slightly larger border radius */
+    height: 52s0px;
+    /* Adjusted height for 1920x1080 images */
+    border-radius: 10px;
+    /* Slightly larger border radius */
     margin-bottom: 20px;
 }
 
@@ -181,13 +197,19 @@ body {
 /* Carousel Previews */
 .carousel-previews {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: start;
-    gap: 15px; /* Larger gap for better spacing */
-    margin-bottom: 30px; /* More separation from carousel */
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .preview-image {
-    width: 120px; /* Slightly larger preview size */
+    width: 120px;
+    /* Slightly larger preview size */
     height: 80px;
     object-fit: cover;
     border-radius: 6px;
@@ -198,9 +220,12 @@ body {
 
 .preview-image:hover,
 .preview-image.active {
-    border: 2px solid #FFFFFF; /* White border */
-    transform: scale(1.1); /* Slight zoom on hover */
-    box-shadow: 0 0 20px 5px rgba(99, 64, 255, 0.7); /* Purple glowing effect */
+    border: 2px solid #FFFFFF;
+    /* White border */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+    box-shadow: 0 0 20px 5px rgba(99, 64, 255, 0.7);
+    /* Purple glowing effect */
 }
 
 /* Project Description */
@@ -208,25 +233,31 @@ body {
     padding: 30px;
     border-radius: 10px;
     color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
-    text-align: left; /* Align text to the left for better readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Added shadow for depth */
+    text-align: left;
+    /* Align text to the left for better readability */
 }
 
 .project-description h2 {
     margin-bottom: 15px;
-    font-size: 2rem; /* Larger heading */
+    font-size: 2rem;
+    /* Larger heading */
     color: #FFFFFF;
-    text-align: left; /* Center-align the heading */
+    text-align: left;
+    /* Center-align the heading */
 }
 
 .project-description p {
-    line-height: 1.8; /* Improved readability with increased spacing */
+    line-height: 1.8;
+    /* Improved readability with increased spacing */
     margin-bottom: 10px;
-    color: #e0e0e0; /* Softer white for contrast */
+    color: #e0e0e0;
+    /* Softer white for contrast */
     font-family: 'Courier New', Courier, monospace;
 }
 
-.project-description li{
+.project-description li {
     font-family: 'Courier New', Courier, monospace;
     padding-left: 10px;
     list-style: none;
@@ -235,22 +266,26 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .carousel {
-        height: 300px; /* Reduced height for smaller screens */
+        height: 300px;
+        /* Reduced height for smaller screens */
     }
 
     .carousel-title {
-        font-size: 1.8rem; /* Smaller title for mobile */
+        font-size: 1.8rem;
+        /* Smaller title for mobile */
         top: 10px;
         left: 10px;
     }
 
     .preview-image {
-        width: 80px; /* Smaller previews for mobile */
+        width: 80px;
+        /* Smaller previews for mobile */
         height: 50px;
     }
 
     .project-description h2 {
-        font-size: 1.5rem; /* Adjusted heading size */
+        font-size: 1.5rem;
+        /* Adjusted heading size */
     }
 }
 
@@ -258,7 +293,8 @@ body {
 
 /* Modal (Popup) Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     z-index: 20;
     left: 0;
@@ -266,7 +302,8 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Semi-transparent black background */
     justify-content: center;
     align-items: center;
 }
@@ -274,13 +311,15 @@ body {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%; /* Restrict image size */
+    max-width: 80%;
+    /* Restrict image size */
     max-height: 80%;
     border-radius: 8px;
 }
 
 .modal-content:hover {
-    transform: scale(1.02); /* Slight zoom effect on hover */
+    transform: scale(1.02);
+    /* Slight zoom effect on hover */
     transition: transform 0.3s ease;
 }
 
@@ -296,7 +335,8 @@ body {
 }
 
 .close:hover {
-    color: red; /* Gold color on hover */
+    color: red;
+    /* Gold color on hover */
 }
 
 #caption {
@@ -305,6 +345,7 @@ body {
     padding: 10px 20px;
     font-size: 1.2rem;
 }
+
 /* buttons */
 /* Base styles for all buttons */
 .action-button {
@@ -321,7 +362,8 @@ body {
     position: relative;
     overflow: hidden;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px; /* Adds spacing between buttons */
+    margin: 10px;
+    /* Adds spacing between buttons */
 }
 
 /* Shared hover animation */
@@ -342,42 +384,53 @@ body {
 
 /* GitHub Button */
 .action-button.github {
-    background-color: #28a745; /* Green */
+    background-color: #28a745;
+    /* Green */
 }
 
 .action-button.github:hover {
-    background-color: #218838; /* Darker Green */
-    box-shadow: 0 0 30px 5px rgba(40, 167, 69, 0.6); /* Green glow */
+    background-color: #218838;
+    /* Darker Green */
+    box-shadow: 0 0 30px 5px rgba(40, 167, 69, 0.6);
+    /* Green glow */
 }
 
 /* Live Demo Button */
 .action-button.demo {
-    background-color: #10387d; /* Purple */
+    background-color: #10387d;
+    /* Purple */
 }
 
 .action-button.demo:hover {
-    background-color: #4e32d4; /* Darker Purple */
-    box-shadow: 0 0 30px 5px rgba(6, 44, 133, 0.775); /* Purple glow */
+    background-color: #4e32d4;
+    /* Darker Purple */
+    box-shadow: 0 0 30px 5px rgba(6, 44, 133, 0.775);
+    /* Purple glow */
 }
 
 /* YouTube Button */
 .action-button.youtube {
-    background-color: #FF0000; /* Red */
+    background-color: #FF0000;
+    /* Red */
 }
 
 .action-button.youtube:hover {
-    background-color: #cc0000; /* Darker Red */
+    background-color: #cc0000;
+    /* Darker Red */
     box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.6);
 }
 
 /* Figma Button */
 .action-button.figma {
-    background-color: #6C63FF; /* Vibrant Purple */
+    background-color: #6C63FF;
+    /* Vibrant Purple */
 }
 
 .action-button.figma:hover {
-    background-color: #5A54E8; /* Slightly darker purple */
-    box-shadow: 0 0 30px 5px rgba(108, 99, 255, 0.6); /* Purple glow */
+    background-color: #5A54E8;
+    /* Slightly darker purple */
+    box-shadow: 0 0 30px 5px rgba(108, 99, 255, 0.6);
+    /* Purple glow */
 }
 
 /* Keyframes for hover animation */
@@ -387,11 +440,13 @@ body {
         width: 0;
         left: 0%;
     }
+
     50% {
         opacity: 0.5;
         width: 200%;
         left: 50%;
     }
+
     100% {
         opacity: 0;
         width: 0;
@@ -399,7 +454,93 @@ body {
     }
 }
 
-.title{
+.title {
     display: flex;
     justify-content: space-between;
+}
+
+/* Dungeon Escape */
+/* Disclaimer Section */
+.confidential-disclaimer {
+    padding: 15px;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Unique Selling Points */
+.unique-selling-points {
+    border-left: 5px solid #084563;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Art Style Section */
+.art-style {
+    border-left: 5px solid #c5a80a;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Milestones */
+.milestone-schedule ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.milestone-schedule li {
+    margin-bottom: 10px;
+}
+
+/* Game Loop Section */
+.game-loop ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.game-loop li {
+    margin-bottom: 10px;
+}
+
+/* Player Profiles */
+.player-profiles {
+    border-left: 5px solid #7b42ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.documentImgs {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevents wrapping to multiple rows */
+    gap: 10px;
+    /* Space between images */
+    overflow-x: auto;
+    /* Allows horizontal scrolling if images exceed container width */
+    width: 100%;
+    height: auto;
+    border-radius: 5;
+    margin-bottom: 20px;
+}
+
+.documentImgs img {
+    border-radius: 5px;
+    height: auto;
+    min-height: 250px;
+    /* Adjust height as needed */
+    object-fit: cover;
+    /* Ensures the image fits without distortion */
+}
+
+.art-style-image{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
