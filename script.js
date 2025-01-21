@@ -32,3 +32,19 @@ function showContent(id) {
     document.querySelector('.connect-with-me').scrollIntoView({ behavior: 'smooth' });
   }
   
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash; // Get the hash from the URL
+    if (hash) {
+        const targetElement = document.querySelector(hash); // Find the target element
+        if (targetElement) {
+            const offset = 100; // Offset value to account for the navbar
+            const topPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+
+            window.scrollTo({
+                top: topPosition, // Adjusted position with offset
+                behavior: "smooth" // Enable smooth scrolling
+            });
+        }
+    }
+});
