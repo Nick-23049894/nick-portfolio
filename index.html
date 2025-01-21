@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <title>Nick-Portfolio</title>
 </head>
 
@@ -13,13 +14,20 @@
         <div class="navbar-logo">
             <img src="assets/images/logo.png" alt="Nick Ho Logo" class="logo-image" />
         </div>
+        <button class="navbar-toggle" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <nav class="navbar-links">
             <a onclick="scrollToHome()">Home</a>
             <a onclick="scrollToAbout()">About</a>
             <a href="/projects.html">Projects</a>
             <a onclick="scrollToContact()">Contact</a>
+            <a href="assets/resume.pdf" download="Nick_Ho_Resume.pdf">Resume</a>
         </nav>
     </header>
+    
 
     <!-- Hero Section -->
     <div class="hero-container">

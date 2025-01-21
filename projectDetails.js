@@ -70,3 +70,12 @@ function closeModal() {
     const modal = document.getElementById('image-modal');
     modal.style.display = 'none'; // Hide modal
 }
+
+
+// hamburger
+const toggleButton = document.querySelector('.navbar-toggle');
+const navbarLinks = document.querySelector('.navbar-links');
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('collapsed');
+});

@@ -78,3 +78,11 @@ filterSelection('all');
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// hamburger
+const toggleButton = document.querySelector('.navbar-toggle');
+const navbarLinks = document.querySelector('.navbar-links');
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('collapsed');
+});
