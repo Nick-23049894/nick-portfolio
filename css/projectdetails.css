@@ -26,6 +26,7 @@ body {
     /* Centered content */
 }
 
+
 /* Carousel Styles */
 .carousel-container {
     position: relative;
@@ -125,28 +126,26 @@ body {
     /* Align text to the left for better readability */
 }
 
-.project-description h2 {
+.project-description h2,h3 {
     margin-bottom: 15px;
-    font-size: 2rem;
-    /* Larger heading */
+    font-size: 1.6rem;
     color: #FFFFFF;
     text-align: left;
-    /* Center-align the heading */
 }
 
 .project-description p {
     line-height: 1.8;
-    /* Improved readability with increased spacing */
     margin-bottom: 10px;
     color: #e0e0e0;
-    /* Softer white for contrast */
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
 }
 
 .project-description li {
     font-family: 'Courier New', Courier, monospace;
     padding-left: 10px;
     list-style: none;
+    font-size: 1.3rem;
 }
 
 /* Responsive Design */

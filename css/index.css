@@ -58,9 +58,7 @@ body {
 
 .arrow-down:hover {
   transform: translateY(10px);
-  /* Moves the arrow down slightly */
   color: #ccc;
-  /* Optional color change */
 }
 
 /* About Section */
@@ -72,7 +70,6 @@ body {
   line-height: 1.6;
 }
 
-/* General Heading Styles */
 .page-container h1,
 h2,
 h3,
@@ -114,7 +111,7 @@ li {
 
 .about-me-text {
   max-width: 50%;
-  font-size: 1.5rem;
+  font-size: 1.3em;
 }
 .about-me h2 {
   margin-bottom: 10px;
@@ -126,7 +123,7 @@ li {
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .title-text {

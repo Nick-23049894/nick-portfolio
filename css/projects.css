@@ -18,13 +18,17 @@ body {
     margin-bottom: 20px;    
 }
 
+.paddings {
+    padding: 15px 5%;
+    text-align: start;
+    max-width: 1600px;
+}
 
-/* Carousel Styles */
 .carousel-container {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
+    justify-content: center;
+    align-items: center;
     margin: auto;
     max-width: 1600px;
     height: 500px;
@@ -35,7 +39,6 @@ body {
     color: white;
     margin-top: 100px;
 }
-
 
 .carousel-container img {
     border-radius: 8px;
@@ -118,10 +121,9 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect with glow and animation */
 .carousel-button:hover {
-    background-color: #4e32d4; /* Slightly darker purple */
-    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.6); /* Glowing effect */
+    background-color: #4e32d4;
+    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.6);
 }
 
 .carousel-button:hover::before {
@@ -139,7 +141,6 @@ body {
     animation: sh02 0.5s 0s linear;
 }
 
-/* Pseudo-element for glowing streak animation */
 .carousel-button::before {
     content: '';
     display: block;
@@ -178,11 +179,10 @@ body {
     overflow: hidden;
 }
 
-/* Hover effect with glow and animation */
 .sidebar-item:hover {
-    background-color: #6340FF; /* Purple background */
+    background-color: #6340FF;
     color: white;
-    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.7); /* Glowing purple shadow */
+    box-shadow: 0 0 30px 5px rgba(99, 64, 255, 0.7);
 }
 
 .sidebar-item:hover::before {
@@ -409,13 +409,7 @@ body {
 }
 
 
-.paddings {
-    padding: 0 5%;
-}
-.paddings h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 
 
 @media (max-width: 768px) {
