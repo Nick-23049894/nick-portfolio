@@ -119,33 +119,31 @@ body {
 .project-description {
     padding: 30px;
     border-radius: 10px;
-    color: white;
+    color: #F2F4F7;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    /* Added shadow for depth */
     text-align: left;
-    /* Align text to the left for better readability */
 }
 
 .project-description h2,h3 {
     margin-bottom: 15px;
     font-size: 1.6rem;
-    color: #FFFFFF;
+    color: #F2F4F7;
     text-align: left;
 }
 
 .project-description p {
     line-height: 1.8;
     margin-bottom: 10px;
-    color: #e0e0e0;
+    color: #F2F4F7;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .project-description li {
     font-family: 'Courier New', Courier, monospace;
     padding-left: 10px;
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 /* Responsive Design */
@@ -212,7 +210,7 @@ body {
     position: absolute;
     top: 20px;
     right: 35px;
-    color: white;
+    color: #F2F4F7;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
@@ -226,7 +224,7 @@ body {
 
 #caption {
     text-align: center;
-    color: white;
+    color: #F2F4F7;
     padding: 10px 20px;
     font-size: 1.2rem;
 }
@@ -239,7 +237,7 @@ body {
     padding: 8px 20px;
     border: none;
     border-radius: 6px;
-    color: #ffffff;
+    color: #F2F4F7;
     font-size: 1rem;
     font-family: "Cascadia Code", monospace;
     text-align: center;
@@ -261,8 +259,8 @@ body {
     top: 7%;
     left: 0%;
     opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
+    background: #F2F4F7;
+    box-shadow: 0 0 50px 30px #F2F4F7;
     transform: skewX(-20deg);
     animation: sh02 0.5s 0s linear;
 }
@@ -313,24 +311,12 @@ body {
 
 .action-button.figma:hover {
     background-color: #5A54E8;
-    /* Slightly darker purple */
     box-shadow: 0 0 30px 5px rgba(108, 99, 255, 0.6);
-    /* Purple glow */
 }
 
 /* Download Button */
 .action-button.download {
     background-color: #007BFF; /* Vibrant Blue */
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-family: "Cascadia Code", monospace;
-    border: none;
-    border-radius: 5px;
-    display: inline-block;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .action-button.download:hover {

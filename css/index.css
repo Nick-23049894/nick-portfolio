@@ -24,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #F2F4F7;
   position: relative;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #010110),
     url('../assets/images/bg1.png');
@@ -111,7 +111,7 @@ li {
 
 .about-me-text {
   max-width: 50%;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .about-me h2 {
   margin-bottom: 10px;
@@ -123,7 +123,7 @@ li {
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .title-text {
@@ -211,8 +211,8 @@ li {
   top: 7%;
   left: 0%;
   opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
+  background: #F2F4F7;
+  box-shadow: 0 0 50px 30px #F2F4F7;
   transform: skewX(-20deg);
 }
 
