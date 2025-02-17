@@ -1,0 +1,129 @@
+body{
+    background-color: #010110;
+    overflow-x: hidden;
+    font-family: "Franklin Gothic Heavy", sans-serif;
+    color: white;
+}
+.resume-container {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+    background: #010110;
+    color: #F2F4F7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 2.5rem;
+}
+
+.resume-header p {
+    font-size: 1.2rem;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #6340FF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.education-entry,
+.experience-entry,
+.project-entry {
+    margin-bottom: 15px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-box {
+    background: #6340FF;
+    color: #F2F4F7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Download Resume Button */
+.action-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #F2F4F7;
+    font-size: 1rem;
+    font-family: "Cascadia Code", monospace;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    /* Adds spacing between buttons */
+}
+
+/* Shared hover animation */
+.action-button:hover::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #F2F4F7;
+    box-shadow: 0 0 50px 30px #F2F4F7;
+    transform: skewX(-20deg);
+    animation: sh02 0.5s 0s linear;
+}
+.action-button.download {
+    background-color: #0056b3;
+}
+/* Hover Animation */
+.action-button.download:hover {
+    background-color: #0056b3; /* Darker Blue */
+    box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.6); /* Blue glow */
+}
+
+
+
+/* Keyframe Animation */
+@keyframes sh02 {
+    0% {
+        opacity: 0;
+        width: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 0.5;
+        width: 200%;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+        left: 100%;
+    }
+}

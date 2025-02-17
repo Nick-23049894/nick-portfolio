@@ -6,7 +6,6 @@
     align-items: center;
     padding: 1rem 2rem;
     background: rgba(30, 30, 36, 0.8);
-    /* Semi-transparent background */
     color: white;
     position: fixed;
     top: 0;
@@ -14,9 +13,8 @@
     width: 100%;
     z-index: 10;
     backdrop-filter: blur(10px);
-    /* Adds a blur effect */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+    box-sizing: border-box;
 }
 
 .navbar-logo {
